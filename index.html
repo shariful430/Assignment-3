@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <!-- Tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts cdn -->
+     <!-- sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!--ADLaM Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+
+    <!-- Daisyui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        .font-sora{
+            font-family: "Sora", sans-serif;
+
+        }
+        .ADLaM-Display{
+            font-family: "ADLaM Display", system-ui;
+
+        }
+
+    </style>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                header: '#fff9f4',
+                button1: '#ffdc26',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- header section -->
+     <header class="font-sora">
+       <nav>
+        <div class="navbar px-5 md:px-24 bg-header shadow-sm border border-black md:border-0 ">
+            <div class="navbar-start   w-full">
+              <div class="dropdown">
+              </div>
+              <div class="mr-2">
+                <img src="images/c1-assets/logo-header.png" alt=""></div>
+              <a class=" text-xl hidden md:block">Brows<span class="text-yellow-300">4</span>Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Find a Pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+       
+            <div class="navbar-end hidden  md:flex   space-x-2">
+                <img  src="images/c1-assets/Vector.png" alt="">
+                <img  src="images/c1-assets/search (2) 1.png" alt="">
+              <a class="btn bg-header border-2 border-yellow-200">Login</a>
+              <a class="btn bg-button1">Register</a>
+
+              
+
+            </div>
+            <img class="  block md:hidden " src="images/c1-assets/bars-3.png" alt="">
+          </div>
+       </nav>
+
+     </header>
+</body>
+</html>
